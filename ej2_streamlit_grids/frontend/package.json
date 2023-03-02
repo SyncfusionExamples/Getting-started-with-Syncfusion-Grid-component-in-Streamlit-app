@@ -1,0 +1,49 @@
+{
+  "name": "streamlit_component_template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@syncfusion/ej2-base": "^20.4.48",
+    "@syncfusion/ej2-buttons": "^20.4.44",
+    "@syncfusion/ej2-calendars": "^20.4.44",
+    "@syncfusion/ej2-dropdowns": "^20.4.43",
+    "@syncfusion/ej2-inputs": "^20.4.42",
+    "@syncfusion/ej2-navigations": "^20.4.44",
+    "@syncfusion/ej2-notifications": "^20.4.42",
+    "@syncfusion/ej2-popups": "^20.4.44",
+    "@syncfusion/ej2-react-grids": "^20.4.44",
+    "@syncfusion/ej2-splitbuttons": "^20.4.42",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "gulp": "^4.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "streamlit-component-lib": "^1.3.0",
+    "typescript": "^4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "."
+}
