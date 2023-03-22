@@ -30,7 +30,7 @@ GridComponent(props)
 
 Use the following command to run the application:
 
-![demo](./demos/ej2_streamlit_grids_demo.gif)
+![demo](./demos/ej2_streamlit_grids_demos.gif)
 
 ```sh
 streamlit run demo.py
