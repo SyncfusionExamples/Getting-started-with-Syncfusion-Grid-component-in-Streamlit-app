@@ -4,9 +4,11 @@ Developers can write `JavaScript` and `HTML components` that can be rendered in 
 
 Streamlit Components let you expand the functionality provided in the base Streamlit package. Use Streamlit Components to create the needed functionality for your use-case, then wrap it up in a Python package and share with the broader Streamlit community!
 
+The Syncfusion Grid component is a remarkable front-end tool that can be seamlessly integrated into the Streamlit framework, offering users access to a wealth of advanced features and capabilities. For details, refer [here](https://www.syncfusion.com/react-components/react-data-grid).
+
 ## Installation
 
-To Install streamlit on the local machine follow the [Installation](https://docs.streamlit.io/library/get-started/installation) steps on the official streamlit site.
+To Install Syncfusuion Streamlit Grid component use the following command.
 
 The Packages and application required for rendering components are,
 
