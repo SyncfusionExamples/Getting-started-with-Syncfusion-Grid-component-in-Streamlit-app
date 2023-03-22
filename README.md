@@ -1,4 +1,4 @@
-# Streamlit Component
+# Getting started with Syncfusion Grid component in Streamlit application
 
 Developers can write `JavaScript` and `HTML components` that can be rendered in Streamlit apps. Streamlit Components can receive data from, and also send data to, Streamlit Python scripts.
 
@@ -30,7 +30,7 @@ After the installation of all required packages. Follow the instruction to setup
 
 ## Implementation
 
-The Implementation needs basic knowledge on the Python programming language.
+The implementation needs basic knowledge of the Python programming language.
 
 ### Deployment of the JavaScript / HTML component.
 
@@ -82,4 +82,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-javascript-ui-
 
 Check the changelog [here](https://github.com/syncfusion/ej2-javascript-ui-controls/blob/master/controls/layouts/CHANGELOG.md/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-layout-npm).
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+Copyright © 2001 - 2023 Syncfusion Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
