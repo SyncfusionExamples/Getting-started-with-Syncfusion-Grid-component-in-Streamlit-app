@@ -8,65 +8,37 @@ The Syncfusion Grid component is a remarkable front-end tool that can be seamles
 
 ## Installation
 
-To Install Syncfusuion Streamlit Grid component use the following command.
+Use the following command to install the Syncfusion Streamlit Grid component.
 
-The Packages and application required for rendering components are,
-
-* [Anaconda Navigator](https://docs.anaconda.com/navigator/).
-
-* [Streamlit module](https://pypi.org/project/streamlit/).
-
-* [Node JS ( v10.24.1 )](https://nodejs.org/en/blog/release/v10.24.1/).
-
-* [React JS](https://reactjs.org/docs/getting-started.html) (optional).
-
-## Setup
-
-After the installation of all required packages. Follow the instruction to setup the development environment.
-
-* Clone the Streamlit [component-template](https://github.com/streamlit/component-template) GitHub repository to the local machine.
-
-* Choose the template from the [component-template](https://github.com/streamlit/component-template) repo whether React platform or not and Use the chosen template folder.
-
-* Inside the `template` folder rename the folder `my-component` to the module name that will reflect on the [pipy.org](https://pypi.org/project/pip/).
+```sh
+pip install ej2_streamlit_grids
+```
 
 ## Implementation
 
-The implementation needs basic knowledge of the Python programming language.
+Create a simple demo.py file as follows:
 
-### Deployment of the JavaScript / HTML component.
+```py
+from ej2_streamlit_grids import GridComponent, GridProps
+import pandas as pd
 
-* Open the renamed `my-component` folder on a [VS Code](https://code.visualstudio.com/) (or any other `Text-Editor`).
+data = pd.read_csv('dataset.csv')
+props = GridProps(data)
 
-* Install all default dependent packages, use the following command.
-
-```sh
-npm install
-```
-* Install dependent packages for the component using following command
-```sh
-npm install <package-name> --save
+GridComponent(props)
 ```
 
-* Deploy the component code on the respective `*.tsx` file inside the folder : `my-component / frontend / src`.
+Use the following command to run the application:
 
-> Note: Dynamic data should be passed from the streamlit backend. So, No need to implement the dynamic data on the frontend.
+![demo](./demos/ej2_streamlit_grids_demo.gif)
 
-* The gate-way of the component should starts from the `index.tsx` file with streamlit integration. The component should be finally rendered with streamlit.
+```sh
+streamlit run demo.py
+```
 
-* Once all the coding were implemented, Run the component on the local server by executing `npm start` command on the Terminal or Command prompt ( CMD ).
+## Demo
 
-### Deployment of Component on the Streamlit.
-
-* After the development server started, open the `my-component` folder on the another window of the [VS Code](https://code.visualstudio.com/) (or any other `Text-Editor`).
-
-* Now open `__init__.py` file, It acts like a constructor for the Python package when the component package get imported, the `__init__.py` file initiated.
-
-* In `__init__.py` file, rename the class name `my_component` that denotes our Component, the constructor holds the parameter which are passed to the `JS` or `HTML` file.
-
-* The Values or Options are passed to the front end by the `_component_func()` as a parameter from here and received at the front-end as `props.args`.
-
-* Can create another python module to implement the Features to the component, which are manipulated at the `__init__.py` file and passes to the component only as a single parameter.
+The Grid sample is showcased with few feature.
 
 ## Support
 
