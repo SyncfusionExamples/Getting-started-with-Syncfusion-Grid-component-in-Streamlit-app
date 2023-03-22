@@ -1,14 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name="streamlit-custom-component",
+    name="ej2-streamlit-grids",
     version="0.0.1",
-    author="",
-    author_email="",
-    description="",
-    long_description="",
-    long_description_content_type="text/plain",
-    url="",
+    author="Syncfusion",
+    author_email="info@syncfusion.com",
+    url="https://www.syncfusion.com/",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[],
