@@ -5,7 +5,7 @@ import json
 import typing
 
 
-_RELEASE = True
+_RELEASE = False
 
 if not _RELEASE:
     _component_func = components.declare_component(
