@@ -17,7 +17,7 @@ export class EJ2Grid extends StreamlitComponentBase<State> {
 
   constructor( props: any ) {
     super(props);
-    import('./styles/' + this.props.args.params.theme +'.css');
+    import('./themes/' + this.props.args.params.theme +'.css');
     this.state = { refreshed: 1 }
   }
 
