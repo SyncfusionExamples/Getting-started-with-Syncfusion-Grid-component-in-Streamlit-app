@@ -11,7 +11,7 @@ The Syncfusion Grid component is a remarkable front-end tool that can be seamles
 Use the following command to install the Syncfusion Streamlit Grid component.
 
 ```sh
-pip install ej2_streamlit_grids
+pip install ej2-streamlit-grids
 ```
 
 ## Implementation
