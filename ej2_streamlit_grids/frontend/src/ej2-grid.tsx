@@ -15,9 +15,8 @@ interface State {
  */
 export class EJ2Grid extends StreamlitComponentBase<State> {
 
-  constructor( props: any ) {
+  constructor(props: any) {
     super(props);
-    import('./themes/' + this.props.args.params.theme +'.css');
     this.state = { refreshed: 1 }
   }
 
@@ -82,54 +81,57 @@ export class EJ2Grid extends StreamlitComponentBase<State> {
 
 
     return (
-      <GridComponent ref={grid => this.gridInstance = grid}
-        dataSource={ this.props.args.params.data }
-        toolbar={ this.props.args.params.toolbarItems }
-        toolbarClick={this.toolbarClick.bind(this)}
-        allowExcelExport={ this.props.args.params.allowExcelExport }
-        allowKeyboard={ this.props.args.params.allowKeyboard }
-        allowMultiSorting={ this.props.args.params.allowMultiSorting }
-        allowPdfExport={ this.props.args.params.allowPdfExport }
-        allowReordering={ this.props.args.params.allowReordering }
-        allowRowDragAndDrop={ this.props.args.params.allowRowDragAndDrop }
-        allowSelection={ this.props.args.params.allowSelection }
-        allowTextWrap={ this.props.args.params.allowTextWrap }
-        enableAdaptiveUI={ this.props.args.params.enableAdaptiveUI }
-        enableColumnVirtualization={ this.props.args.params.enableColumnVirtualization }
-        enableHeaderFocus={ this.props.args.params.enableHeaderFocus }
-        enableHover={ this.props.args.params.enableHover }
-        enableImmutableMode={ this.props.args.params.enableImmutableMode }
-        enableInfiniteScrolling={ this.props.args.params.enableInfiniteScrolling } infiniteScrollSettings={ this.props.args.params.infiniteScrollSettings }
-        enablePersistence={ this.props.args.params.enablePersistence }
-        enableStickyHeader={ this.props.args.params.enableStickyHeader }
-        enableVirtualMaskRow={ this.props.args.params.enableVirtualMaskRow }
-        enableVirtualization={ this.props.args.params.enableVirtualization }
-        showColumnChooser={ this.props.args.params.showColumnChooser }
-        showColumnMenu={ this.props.args.params.showColumnMenu }
-        childGrid={ this.props.args.params.childGrid }
-        editSettings={ this.props.args.params.editSettings }
-        allowGrouping={ this.props.args.params.allowGrouping } groupSettings={ this.props.args.params.groupSettings }
-        allowPaging={ this.props.args.params.allowPaging } pageSettings={ this.props.args.params.pageSettings }
-        allowFiltering={ this.props.args.params.allowFiltering } filterSettings={ this.props.args.params.filterSettings } 
-        allowSorting={ this.props.args.params.allowSorting } sortSettings={ this.props.args.params.sortSettings }
-        searchSettings={ this.props.args.params.searchSettings }
-        selectionSettings={ this.props.args.params.selectionSettings }
-        textWrapSettings={ this.props.args.params.textWrapSettings }
-        allowResizing={ this.props.args.params.allowResizing }
-        height={ this.props.args.params.height }
-        width={ this.props.args.params.width }
-        rowHeight={ this.props.args.params.rowHeight }
-        rowRenderingMode={ this.props.args.params.rowRenderingMode }
-        selectedRowIndex={ this.props.args.params.selectedRowIndex }
-        printMode={ this.props.args.params.printMode }
-        frozenColumns={ this.props.args.params.frozenColumns }
-        gridLines={ this.props.args.params.gridLines }
-        frozenRows={ this.props.args.params.frozenRows }>
-        <ColumnsDirective>
-          {totalColumns}
-        </ColumnsDirective>
-        <Inject services={[Page, Sort, Filter, Group, Toolbar, InfiniteScroll, ExcelExport, PdfExport, Reorder, Resize, RowDD, Edit, Freeze, Search, DetailRow, ColumnChooser, ColumnMenu]} />
-      </GridComponent>
+      <>
+        <link rel="stylesheet" href={this.props.args.params.theme} />
+        <GridComponent ref={grid => this.gridInstance = grid}
+          dataSource={this.props.args.params.data}
+          toolbar={this.props.args.params.toolbarItems}
+          toolbarClick={this.toolbarClick.bind(this)}
+          allowExcelExport={this.props.args.params.allowExcelExport}
+          allowKeyboard={this.props.args.params.allowKeyboard}
+          allowMultiSorting={this.props.args.params.allowMultiSorting}
+          allowPdfExport={this.props.args.params.allowPdfExport}
+          allowReordering={this.props.args.params.allowReordering}
+          allowRowDragAndDrop={this.props.args.params.allowRowDragAndDrop}
+          allowSelection={this.props.args.params.allowSelection}
+          allowTextWrap={this.props.args.params.allowTextWrap}
+          enableAdaptiveUI={this.props.args.params.enableAdaptiveUI}
+          enableColumnVirtualization={this.props.args.params.enableColumnVirtualization}
+          enableHeaderFocus={this.props.args.params.enableHeaderFocus}
+          enableHover={this.props.args.params.enableHover}
+          enableImmutableMode={this.props.args.params.enableImmutableMode}
+          enableInfiniteScrolling={this.props.args.params.enableInfiniteScrolling} infiniteScrollSettings={this.props.args.params.infiniteScrollSettings}
+          enablePersistence={this.props.args.params.enablePersistence}
+          enableStickyHeader={this.props.args.params.enableStickyHeader}
+          enableVirtualMaskRow={this.props.args.params.enableVirtualMaskRow}
+          enableVirtualization={this.props.args.params.enableVirtualization}
+          showColumnChooser={this.props.args.params.showColumnChooser}
+          showColumnMenu={this.props.args.params.showColumnMenu}
+          childGrid={this.props.args.params.childGrid}
+          editSettings={this.props.args.params.editSettings}
+          allowGrouping={this.props.args.params.allowGrouping} groupSettings={this.props.args.params.groupSettings}
+          allowPaging={this.props.args.params.allowPaging} pageSettings={this.props.args.params.pageSettings}
+          allowFiltering={this.props.args.params.allowFiltering} filterSettings={this.props.args.params.filterSettings}
+          allowSorting={this.props.args.params.allowSorting} sortSettings={this.props.args.params.sortSettings}
+          searchSettings={this.props.args.params.searchSettings}
+          selectionSettings={this.props.args.params.selectionSettings}
+          textWrapSettings={this.props.args.params.textWrapSettings}
+          allowResizing={this.props.args.params.allowResizing}
+          height={this.props.args.params.height}
+          width={this.props.args.params.width}
+          rowHeight={this.props.args.params.rowHeight}
+          rowRenderingMode={this.props.args.params.rowRenderingMode}
+          selectedRowIndex={this.props.args.params.selectedRowIndex}
+          printMode={this.props.args.params.printMode}
+          frozenColumns={this.props.args.params.frozenColumns}
+          gridLines={this.props.args.params.gridLines}
+          frozenRows={this.props.args.params.frozenRows}>
+          <ColumnsDirective>
+            {totalColumns}
+          </ColumnsDirective>
+          <Inject services={[Page, Sort, Filter, Group, Toolbar, InfiniteScroll, ExcelExport, PdfExport, Reorder, Resize, RowDD, Edit, Freeze, Search, DetailRow, ColumnChooser, ColumnMenu]} />
+        </GridComponent>
+      </>
     )
   }
 

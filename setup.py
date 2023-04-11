@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="ej2_streamlit_grids",
-    version="0.0.1",
+    version="1.0.0",
     author="Syncfusion",
     author_email="info@syncfusion.com",
     url="https://www.syncfusion.com/",
