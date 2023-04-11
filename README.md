@@ -14,14 +14,14 @@ python -m venv my-project
 
 Using the above command will create a Python virtual environment.
 
-Upon completing the aforementioned step to create `my-project`, run the following command to install Streamlit:
+Upon completing the aforementioned step to create **my-project**, run the following command to install Streamlit:
 
 ```bash
 cd my-project
 pip install streamlit
 ```
 
-Now that `my-project` is ready to run with default settings, let's add Syncfusion Grid components to the project.
+Now that **my-project** is ready to run with default settings, let's add Syncfusion Grid components to the project.
 
 ## Add Syncfusion Grid package
 
@@ -35,7 +35,7 @@ pip install ej2-streamlit-grids
 
 Follow the below steps to add the Syncfusion Grid component to the Streamlit Python project:
 
-  1. First, create a Python file named `demo.py` and import the Grid component into the  **demo.py** file.
+  1. First, create a Python file named **demo.py** and import the Grid component into the  **demo.py** file.
 
 ```py
 from ej2_streamlit_grids import GridComponent, GridProps
@@ -85,6 +85,6 @@ The output will appear as follows:
 
 ## Grid features demo
 
-The Grid component is rendered along with some extra features in the **demo.py** file located in the `demos` folder. The resulting output with these features will be displayed as depicted below:
+The Grid component is rendered along with some additional features in the **demo.py** file located in the **demos** folder. The resulting output with these features will be displayed as depicted below:
 
 ![demo](./demos/ej2_streamlit_grids_demos.gif)
