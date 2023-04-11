@@ -158,7 +158,7 @@ class GridProps:
         self.selectionSettings = {}
         self.infiniteScrollSettings = {}
         self.textWrapSettings = {}
-        self.height = 'auto'
+        self.height = 300
         self.width = 'auto'
         self.rowHeight = None
         self.rowRenderingMode = None

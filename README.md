@@ -6,15 +6,15 @@ The `Streamlit` is a free and open-source framework that enables quick developme
 
 ## Set up the Streamlit project environment
 
-A recommended approach for beginning with Streamlit framework is to create Python environment with [venv](https://docs.python.org/3/library/venv.html). To create a new Python environment, use the following command.
+A recommended approach for beginning with Streamlit framework is to create a Python environment with [venv](https://docs.python.org/3/library/venv.html). To create a new Python environment, use the following command.
 
 ```bash
 python -m venv my-project
 ```
 
-Using the above command will create a Python virtual evnironment.
+Using the above command will create a Python virtual environment.
 
-Upon completing the aforementioned step to create the `my-project`, run the following command to install Streamlit:
+Upon completing the aforementioned step to create `my-project`, run the following command to install Streamlit:
 
 ```bash
 cd my-project
@@ -25,17 +25,17 @@ Now that `my-project` is ready to run with default settings, let's add Syncfusio
 
 ## Add Syncfusion Grid package
 
-Syncfusion Grid component package is available at [pypi.org](https://pypi.org/project/ej2-streamlit-grids/). To use Syncfusion Grid component in the project, install the corresponding pip package.
+Syncfusion Grid component package is available at [pypi.org](https://pypi.org/project/ej2-streamlit-grids/). To use the Syncfusion Grid component in the project, install the corresponding pip package.
 
 ```sh
 pip install ej2-streamlit-grids
 ```
 
-## Add Syncfusion Grid package
+## Add Syncfusion Grid component
 
-Follow the below steps to add the Syncfusion Grid component to Streamlit Python project:
+Follow the below steps to add the Syncfusion Grid component to the Streamlit Python project:
 
-  1. First, create a Python file named `demo.py` and import the Grid component in the  **demo.py** file.
+  1. First, create a Python file named `demo.py` and import the Grid component into the  **demo.py** file.
 
 ```py
 from ej2_streamlit_grids import GridComponent, GridProps
@@ -80,5 +80,11 @@ streamlit run demo.py
 ```
 
 The output will appear as follows:
+
+![demo](./demos/ej2_streamlit_grids_demo.png)
+
+## Grid features demo
+
+The Grid component is rendered along with some extra features in the **demo.py** file located in the `demos` folder. The resulting output with these features will be displayed as depicted below:
 
 ![demo](./demos/ej2_streamlit_grids_demos.gif)
