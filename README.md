@@ -31,16 +31,6 @@ Syncfusion Grid component package is available at [pypi.org](https://pypi.org/pr
 pip install ej2-streamlit-grids
 ```
 
-## Add Syncfusion Grid Themes
-
-You can change themes for the Syncfusion Grid component from CDN. Refer to [themes topic](https://ej2.syncfusion.com/react/documentation/appearance/theme/) to know more about built-in themes.
-
-In this article, `Material` theme is applied to Grid component by default. To change various themes in Grid component. Refer to the below code-snippet.
-
-```py
-props.theme = 'https://cdn.syncfusion.com/ej2/21.1.35/bootstrap5.css'
-```
-
 ## Add Syncfusion Grid component
 
 Follow the below steps to add the Syncfusion Grid component to the Streamlit Python project:
@@ -69,6 +59,12 @@ OrderID, CustomerName, OrderDate, Freight, ShippedDate, ShipCountry
 10251, Mary Saveley, 7/8/1996, $41.34, 7/15/1996, France
 ```
 
+  4. Syncfusion components come with pre-defined themes that are built-in. To learn more about these themes, you can refer to the [themes topic](https://ej2.syncfusion.com/react/documentation/appearance/theme/). By default, the Syncfusion Streamlit Grid component uses the `Material` theme, but users have the ability to change the theme of the Grid component at the application level. The Grid component in this article is using the `Fluent` theme, which is referenced using the code snippet below.
+
+```py
+props.theme = 'https://cdn.syncfusion.com/ej2/21.1.35/fluent.css'
+```
+
 Here is the summarized code for the above steps in the **demo.py** file:
 
 ```py
@@ -77,6 +73,7 @@ import pandas as pd
 
 data = pd.read_csv('dataset.csv')
 props = GridProps(data)
+props.theme = 'https://cdn.syncfusion.com/ej2/21.1.35/fluent.css'
 
 GridComponent(props)
 ```
