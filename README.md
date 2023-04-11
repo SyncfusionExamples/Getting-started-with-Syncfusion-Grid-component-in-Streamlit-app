@@ -1,22 +1,65 @@
-# Getting started with Syncfusion Grid component in Streamlit application
+# Getting started with Syncfusion Grid component with Streamlit Python Framework
 
-Developers can write `JavaScript` and `HTML components` that can be rendered in Streamlit apps. Streamlit Components can receive data from, and also send data to, Streamlit Python scripts.
+This article provides a step-by-step guide for setting up a [Streamlit](https://streamlit.io/) project with a Python environment and integrating the Syncfusion Grid components.
 
-Streamlit Components let you expand the functionality provided in the base Streamlit package. Use Streamlit Components to create the needed functionality for your use-case, then wrap it up in a Python package and share with the broader Streamlit community!
+The `Streamlit` is a free and open-source framework that enables quick development and sharing of visually appealing web applications for machine learning and data science.
 
-The Syncfusion Grid component is a remarkable front-end tool that can be seamlessly integrated into the Streamlit framework, offering users access to a wealth of advanced features and capabilities. For details, refer [here](https://www.syncfusion.com/react-components/react-data-grid).
+## Set up the Streamlit project environment
 
-## Installation
+A recommended approach for beginning with Streamlit framework is to create Python environment with [venv](https://docs.python.org/3/library/venv.html). To create a new Python environment, use the following command.
 
-Use the following command to install the Syncfusion Streamlit Grid component.
+```bash
+python -m venv my-project
+```
+
+Using the above command will create a Python virtual evnironment.
+
+Upon completing the aforementioned step to create the `my-project`, run the following command to install Streamlit:
+
+```bash
+cd my-project
+pip install streamlit
+```
+
+Now that `my-project` is ready to run with default settings, let's add Syncfusion Grid components to the project.
+
+## Add Syncfusion Grid package
+
+Syncfusion Grid component package is available at [pypi.org](https://pypi.org/project/ej2-streamlit-grids/). To use Syncfusion Grid component in the project, install the corresponding pip package.
 
 ```sh
 pip install ej2-streamlit-grids
 ```
 
-## Implementation
+## Add Syncfusion Grid package
 
-Create a simple demo.py file as follows:
+Follow the below steps to add the Syncfusion Grid component to Streamlit Python project:
+
+  1. First, create a Python file named `demo.py` and import the Grid component in the  **demo.py** file.
+
+```py
+from ej2_streamlit_grids import GridComponent, GridProps
+```
+  2. Define the Grid component with the `GridProps` and `dataset` instance to the `GridComponent` function.
+
+```py
+data = pd.read_csv('dataset.csv')
+props = GridProps(data)
+
+GridComponent(props)
+```
+
+  3. Declare the values for the **dataset.csv** file.
+
+```sh
+OrderID, CustomerName, OrderDate, Freight, ShippedDate, ShipCountry
+10248, Paul Henriot, 7/4/1996, $32.38, 7/16/1996, France
+10249, Karin Josephs, 7/5/1996, $11.61, 7/10/1996, Germany
+10250, Mario Pontes, 7/8/1996, $65.83, 7/12/1996, Brazil
+10251, Mary Saveley, 7/8/1996, $41.34, 7/15/1996, France
+```
+
+Here is the summarized code for the above steps in the **demo.py** file:
 
 ```py
 from ej2_streamlit_grids import GridComponent, GridProps
@@ -28,32 +71,14 @@ props = GridProps(data)
 GridComponent(props)
 ```
 
-Use the following command to run the application:
+## Run the project
+
+To run the project, use the following command:
 
 ```sh
 streamlit run demo.py
 ```
 
-## Demo
-
-The Grid sample is showcased below with few feature.
+The output will appear as follows:
 
 ![demo](./demos/ej2_streamlit_grids_demos.gif)
-
-## Support
-
-Product support is available for through following mediums.
-
-* Creating incident in Syncfusion [Direct-Trac](https://www.syncfusion.com/support/directtrac/incidents/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-layout-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-layout-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-javascript-ui-controls/issues/new/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-layout-npm).
-* Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-layout-npm) with tag `syncfusion` and `ej2`.
-
-## License
-
-Check the license detail [here](https://github.com/syncfusion/ej2-javascript-ui-controls/blob/master/license/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-layout-npm).
-
-## Changelog
-
-Check the changelog [here](https://github.com/syncfusion/ej2-javascript-ui-controls/blob/master/controls/layouts/CHANGELOG.md/?utm_source=npm&utm_medium=listing&utm_campaign=javascript-layout-npm).
-
-Copyright © 2001 - 2023 Syncfusion Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
