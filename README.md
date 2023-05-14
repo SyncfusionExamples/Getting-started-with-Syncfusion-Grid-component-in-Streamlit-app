@@ -88,10 +88,10 @@ streamlit run demo.py
 
 The output will appear as follows:
 
-![demo](./demos/ej2_streamlit_grids_demo.png)
+![demo](./images/ej2_streamlit_grids_demo.png)
 
 ## Grid features demo
 
 The Grid component is rendered along with some additional features in the **demo.py** file located in the **demos** folder. The resulting output with these features will be displayed as depicted below:
 
-![demo](./demos/ej2_streamlit_grids_demos.gif)
+![demo](./images/ej2_streamlit_grids_demos.gif)
