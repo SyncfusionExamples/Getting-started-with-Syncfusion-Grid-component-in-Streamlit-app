@@ -62,7 +62,7 @@ OrderID, CustomerName, OrderDate, Freight, ShippedDate, ShipCountry
   4. Syncfusion components come with pre-defined themes that are built-in. To learn more about these themes, you can refer to the [themes topic](https://ej2.syncfusion.com/react/documentation/appearance/theme/). By default, the Syncfusion Streamlit Grid component uses the `Material` theme, but users have the ability to change the theme of the Grid component at the application level. The Grid component in this article is using the `Fluent` theme, which is referenced using the code snippet below.
 
 ```py
-props.theme = 'https://cdn.syncfusion.com/ej2/21.1.35/fluent.css'
+props.theme = 'https://cdn.syncfusion.com/ej2/22.1.34/fluent.css'
 ```
 
 Here is the summarized code for the above steps in the **demo.py** file:
@@ -73,7 +73,7 @@ import pandas as pd
 
 data = pd.read_csv('dataset.csv')
 props = GridProps(data)
-props.theme = 'https://cdn.syncfusion.com/ej2/21.1.35/fluent.css'
+props.theme = 'https://cdn.syncfusion.com/ej2/22.1.34/fluent.css'
 
 GridComponent(props)
 ```
@@ -88,10 +88,10 @@ streamlit run demo.py
 
 The output will appear as follows:
 
-![demo](./images/ej2_streamlit_grids_demo.png)
+![demo](images/ej2_streamlit_grids_demo.png)
 
 ## Grid features demo
 
 The Grid component is rendered along with some additional features in the **demo.py** file located in the **demos** folder. The resulting output with these features will be displayed as depicted below:
 
-![demo](./images/ej2_streamlit_grids_demos.gif)
+![demo](images/ej2_streamlit_grids_demos.gif)
