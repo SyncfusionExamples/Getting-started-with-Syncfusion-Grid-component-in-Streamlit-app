@@ -1,18 +1,16 @@
-# Getting started with the Syncfusion Grid component in the Streamlit application
+# Getting started with the Syncfusion Grid component in the Streamlit Application
 
 This article provides a step-by-step guide for setting up a [Streamlit](https://streamlit.io/) application with a Python environment and integrating the Syncfusion Grid components.
 
 `Streamlit` is a free and open-source framework that enables quick development and sharing of visually appealing web applications for machine learning and data science.
 
-## Setting up the Streamlit application
+## Setting up the Streamlit Application
 
-A recommended approach for beginning with the Streamlit framework is to create a Python environment with [venv](https://docs.python.org/3/library/venv.html). Follow these steps to create a new Python environment.
+To begin working with the Streamlit framework, it is recommended to create a Python environment using [venv](https://docs.python.org/3/library/venv.html). Follow the steps below to create a new Python environment
 
 ```bash
 python -m venv my-app
 ```
-
-Using the above command will create a Python virtual environment.
 
 Upon completing the aforementioned step to create **my-app**, run the following command to install Streamlit:
 
@@ -25,10 +23,39 @@ Now that **my-app** is ready to run with default settings, let's add Syncfusion 
 
 ## Add the Syncfusion Grid package
 
-The Syncfusion Grid component package is available at [pypi.org](https://pypi.org/project/ej2-streamlit-grids/). To use the Syncfusion Grid component in the application, install the corresponding pip package.
+Install the Syncfusion Grid component package from [PyPI](https://pypi.org/project/ej2-streamlit-grids/) by executing the following command:
 
 ```sh
 pip install ej2-streamlit-grids
+```
+
+## Add the Syncfusion Grid component
+
+Follow the below steps to add the Syncfusion Grid component to the Streamlit application:
+
+1\. Create a Python file named **demo.py** and import the Grid component into the file:
+
+```py
+from ej2_streamlit_grids import GridComponent, GridProps
+```
+
+2\. Create a `CSV` file named **dataset.csv** and populate it with data in the following format
+
+```sh
+OrderID, CustomerName, OrderDate, Freight, ShippedDate, ShipCountry
+10248, Paul Henriot, 7/4/1996, $32.38, 7/16/1996, France
+10249, Karin Josephs, 7/5/1996, $11.61, 7/10/1996, Germany
+10250, Mario Pontes, 7/8/1996, $65.83, 7/12/1996, Brazil
+10251, Mary Saveley, 7/8/1996, $41.34, 7/15/1996, France
+```
+
+3\. Read the data from the `CSV` file and initialize the `GridProps` object:
+
+```py
+data = pd.read_csv('dataset.csv')
+props = GridProps(data)
+
+GridComponent(props)
 ```
 
 ## Import Syncfusion CSS styles
@@ -41,36 +68,7 @@ In this article, the `Fluent` theme is applied using `theme` property, which are
 props.theme = 'https://cdn.syncfusion.com/ej2/22.1.34/fluent.css'
 ```
 
-## Add the Syncfusion Grid component
-
-Follow the below steps to add the Syncfusion Grid component to the Streamlit Python project:
-
-1\. First, create a Python file named **demo.py** and import the Grid component into the  **demo.py** file.
-
-```py
-from ej2_streamlit_grids import GridComponent, GridProps
-```
-
-2\. Create and Define the values for the Grid component in the **dataset.csv** file.
-
-```sh
-OrderID, CustomerName, OrderDate, Freight, ShippedDate, ShipCountry
-10248, Paul Henriot, 7/4/1996, $32.38, 7/16/1996, France
-10249, Karin Josephs, 7/5/1996, $11.61, 7/10/1996, Germany
-10250, Mario Pontes, 7/8/1996, $65.83, 7/12/1996, Brazil
-10251, Mary Saveley, 7/8/1996, $41.34, 7/15/1996, France
-```
-
-3\. Define the properties for the Grid component with the `GridProps` class and Pass the `data` read from the `CSV` file as the parameter.
-
-```py
-data = pd.read_csv('dataset.csv')
-props = GridProps(data)
-
-GridComponent(props)
-```
-
-## Run the application
+## Run the Application
 
 Here is the summarized code for the above steps in the **demo.py** file:
 
