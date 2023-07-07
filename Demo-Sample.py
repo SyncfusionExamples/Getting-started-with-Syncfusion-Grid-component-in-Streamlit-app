@@ -1,4 +1,4 @@
-from ej2_streamlit_grids import GridComponent, GridProps
+from ej2_streamlit_grids import SfGrid, GridProps
 import pandas as pd
 import streamlit as st
 
@@ -44,4 +44,4 @@ with st.sidebar:
         props.pageSettings = { 'pageSize': pages, 'pageSizes': True }
 
 st.header('Syncfusion Streamlit Grid')
-GridComponent(props)
+SfGrid(Props=props)
