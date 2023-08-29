@@ -33,10 +33,10 @@ pip install ej2-streamlit-grids
 
 Follow the below steps to add the Syncfusion Grid component to the Streamlit application:
 
-1\. Create a Python file named **demo.py** and import the Grid component into the file:
+1\. Create a Python file named **demo.py** and import the Grid component (`SfGrid`) into the file:
 
 ```py
-from ej2_streamlit_grids import GridComponent, GridProps
+from ej2_streamlit_grids import SfGrid, GridProps
 ```
 
 2\. Create a `CSV` file named **dataset.csv** and populate it with data in the following format:
@@ -55,7 +55,7 @@ OrderID, CustomerName, OrderDate, Freight, ShippedDate, ShipCountry
 data = pd.read_csv('dataset.csv')
 props = GridProps(data)
 
-GridComponent(props)
+SfGrid(props)
 ```
 
 ## Import Syncfusion CSS styles
@@ -73,14 +73,14 @@ props.theme = 'https://cdn.syncfusion.com/ej2/22.1.34/fluent.css'
 Here is the summarized code for the above steps in the **demo.py** file:
 
 ```py
-from ej2_streamlit_grids import GridComponent, GridProps
+from ej2_streamlit_grids import SfGrid, GridProps
 import pandas as pd
 
 data = pd.read_csv('dataset.csv')
 props = GridProps(data)
 props.theme = 'https://cdn.syncfusion.com/ej2/22.1.34/fluent.css'
 
-GridComponent(props)
+SfGrid(props)
 ```
 
 Ensure that terminal is in the correct project directory where **demo.py** is located. Run the application using the following command:
