@@ -65,7 +65,7 @@ You can import themes for the Syncfusion Streamlit component from the CDN. Refer
 You can change the default theme with any of the available [built-in themes](https://ej2.syncfusion.com/react/documentation/appearance/theme/). In this article, the `Fluent` theme is applied using `theme` property, which are available in CDN. The necessary `Fluent` CSS styles for the Grid component were passed into the `theme` property, which is referenced using the code snippet below.
 
 ```py
-props.theme = 'https://cdn.syncfusion.com/ej2/22.1.34/fluent.css'
+props.theme = 'https://cdn.syncfusion.com/ej2/23.1.36/fluent.css'
 ```
 
 ## Run the application
@@ -78,7 +78,7 @@ import pandas as pd
 
 data = pd.read_csv('dataset.csv')
 props = GridProps(data)
-props.theme = 'https://cdn.syncfusion.com/ej2/22.1.34/fluent.css'
+props.theme = 'https://cdn.syncfusion.com/ej2/23.1.36/fluent.css'
 
 SfGrid(props)
 ```
